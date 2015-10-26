@@ -23,6 +23,10 @@
 		E147DC5B1BDE58850068CEEF /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E147DC511BDE58850068CEEF /* 9.jpg */; };
 		E147DC5C1BDE58850068CEEF /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E147DC521BDE58850068CEEF /* 10.jpg */; };
 		E147DC621BDE59990068CEEF /* ImagesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC611BDE59990068CEEF /* ImagesTabViewController.m */; };
+		E147DC651BDE74D40068CEEF /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC641BDE74D40068CEEF /* user.m */; };
+		E147DC681BDE86100068CEEF /* media.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC671BDE86100068CEEF /* media.m */; };
+		E147DC6B1BDE86A30068CEEF /* comment.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC6A1BDE86A30068CEEF /* comment.m */; };
+		E147DC6E1BDE87390068CEEF /* dataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC6D1BDE87390068CEEF /* dataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,14 @@
 		E147DC521BDE58850068CEEF /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		E147DC601BDE59990068CEEF /* ImagesTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesTabViewController.h; sourceTree = "<group>"; };
 		E147DC611BDE59990068CEEF /* ImagesTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesTabViewController.m; sourceTree = "<group>"; };
+		E147DC631BDE74D40068CEEF /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
+		E147DC641BDE74D40068CEEF /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = user.m; sourceTree = "<group>"; };
+		E147DC661BDE86100068CEEF /* media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = media.h; sourceTree = "<group>"; };
+		E147DC671BDE86100068CEEF /* media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = media.m; sourceTree = "<group>"; };
+		E147DC691BDE86A30068CEEF /* comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comment.h; sourceTree = "<group>"; };
+		E147DC6A1BDE86A30068CEEF /* comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comment.m; sourceTree = "<group>"; };
+		E147DC6C1BDE87390068CEEF /* dataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataSource.h; sourceTree = "<group>"; };
+		E147DC6D1BDE87390068CEEF /* dataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,14 @@
 				E147DC0B1BDD03F20068CEEF /* Supporting Files */,
 				E147DC601BDE59990068CEEF /* ImagesTabViewController.h */,
 				E147DC611BDE59990068CEEF /* ImagesTabViewController.m */,
+				E147DC631BDE74D40068CEEF /* user.h */,
+				E147DC641BDE74D40068CEEF /* user.m */,
+				E147DC661BDE86100068CEEF /* media.h */,
+				E147DC671BDE86100068CEEF /* media.m */,
+				E147DC691BDE86A30068CEEF /* comment.h */,
+				E147DC6A1BDE86A30068CEEF /* comment.m */,
+				E147DC6C1BDE87390068CEEF /* dataSource.h */,
+				E147DC6D1BDE87390068CEEF /* dataSource.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -263,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E147DC651BDE74D40068CEEF /* user.m in Sources */,
 				E147DC111BDD03F20068CEEF /* AppDelegate.m in Sources */,
 				E147DC0E1BDD03F20068CEEF /* main.m in Sources */,
+				E147DC6B1BDE86A30068CEEF /* comment.m in Sources */,
+				E147DC681BDE86100068CEEF /* media.m in Sources */,
+				E147DC6E1BDE87390068CEEF /* dataSource.m in Sources */,
 				E147DC621BDE59990068CEEF /* ImagesTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,9 +7,12 @@
 //
 
 #import "ImagesTabViewController.h"
+#import "dataSource.h"
+#import "comment.h"
+#import "media.h"
+#import "user.h"
 
 @interface ImagesTabViewController ()
-
 @end
 
 @implementation ImagesTabViewController
@@ -20,7 +23,7 @@
     self = [super initWithStyle:style];
     
     if(self) {
-        self.images = [NSMutableArray array];
+//        self.images = [NSMutableArray array];
     }
     
     return self;
@@ -30,13 +33,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    for (int i = 1; i <= 10; i++) {
-        NSString *imageName = [NSString stringWithFormat:@"%d.jpg", i];
-        UIImage *image = [UIImage imageNamed:imageName];
-        if (image) {
-            [self.images addObject:image];
-        }
-    }
+//    for (int i = 1; i <= 10; i++) {
+//        NSString *imageName = [NSString stringWithFormat:@"%d.jpg", i];
+//        UIImage *image = [UIImage imageNamed:imageName];
+//        if (image) {
+//            [self.images addObject:image];
+//        }
+//    }
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"imageCell"];
     
@@ -58,10 +61,14 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.images.count;
+//    return self.images.count;
+    
+    return [DataSource sharedInstance].mediaItems.count;
 }
 
-/*
+
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  
  
@@ -79,7 +86,7 @@
     if (!imageView) {
     // This is a new cell, it doesn't have an image view yet
     imageView = [[UIImageView alloc] init];
-    imageView.contentMode = UIViewontentModeScaleToFill;
+    imageView.contentMode = UIViewContentModeScaleToFill;
  
     imageView.frame = cell.contentView.bounds;
     imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -88,12 +95,24 @@
     [cell.contentView addSubview:imageView];
     }
     
-    UIImage *image = self.images[indexPath.row];
-    imageView.image = image;
+//    UIImage *image = self.images[indexPath.row];
+    Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+    imageView.image = item.image;
  
     return cell;
  }
-*/
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    UIImage *image = self.images[indexPath.row];
+    Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+    UIImage *image = item.image;
+    
+    
+    return (CGRectGetWidth(self.view.frame) / image.size.width) *image.size.height;
+}
+
+
+
 
 
 /*
