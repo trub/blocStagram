@@ -27,6 +27,7 @@
 		E147DC681BDE86100068CEEF /* media.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC671BDE86100068CEEF /* media.m */; };
 		E147DC6B1BDE86A30068CEEF /* comment.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC6A1BDE86A30068CEEF /* comment.m */; };
 		E147DC6E1BDE87390068CEEF /* dataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC6D1BDE87390068CEEF /* dataSource.m */; };
+		E147DC711BDECA730068CEEF /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E147DC701BDECA730068CEEF /* MediaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		E147DC6A1BDE86A30068CEEF /* comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comment.m; sourceTree = "<group>"; };
 		E147DC6C1BDE87390068CEEF /* dataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataSource.h; sourceTree = "<group>"; };
 		E147DC6D1BDE87390068CEEF /* dataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataSource.m; sourceTree = "<group>"; };
+		E147DC6F1BDECA730068CEEF /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewCell.h; sourceTree = "<group>"; };
+		E147DC701BDECA730068CEEF /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				E147DC6A1BDE86A30068CEEF /* comment.m */,
 				E147DC6C1BDE87390068CEEF /* dataSource.h */,
 				E147DC6D1BDE87390068CEEF /* dataSource.m */,
+				E147DC6F1BDECA730068CEEF /* MediaTableViewCell.h */,
+				E147DC701BDECA730068CEEF /* MediaTableViewCell.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			files = (
 				E147DC651BDE74D40068CEEF /* user.m in Sources */,
 				E147DC111BDD03F20068CEEF /* AppDelegate.m in Sources */,
+				E147DC711BDECA730068CEEF /* MediaTableViewCell.m in Sources */,
 				E147DC0E1BDD03F20068CEEF /* main.m in Sources */,
 				E147DC6B1BDE86A30068CEEF /* comment.m in Sources */,
 				E147DC681BDE86100068CEEF /* media.m in Sources */,
